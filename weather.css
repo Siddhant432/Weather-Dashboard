@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Roboto:wght@300&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.background>img
+{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.background::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.416);
+}
+.navigation-bar
+{
+    margin-left: 650px;
+    top: 0;
+    position: absolute;
+}
+.noc
+{
+    font-size: 22px;
+    padding-right: 100px;
+
+}
+
+.row .col-md-6 .content
+{
+    color: white;
+    top: 55%;
+    position: absolute;
+}
+.noc:hover
+{
+    text-decoration: underline;
+}
+.webName
+{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 84px;
+    margin-bottom: 0px;
+}
+.quote
+{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.part3{
+    background-image: url('https://images.pexels.com/photos/3888585/pexels-photo-3888585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.top-stories
+{
+    font-family: 'Headland One', serif;
+    font-size: 64px;
+}
+main>.songs{
+margin-top: 70px;
+display:grid;
+gap: 10px;
+grid-template-columns: repeat(5,1fr);
+}
+.songs>div{
+text-align: center;
+width:250px;
+height:280px;
+padding:15px;
+border-radius: 10px;
+border: 1px solid white;
+margin-left: 30px;
+margin-bottom: 20px;
+
+
+/*border: 1px solid white;*/
+}
+.songs>div:hover{
+transform: scale(1.2);
+transition: 1s;
+box-shadow: 0 0 20px whitesmoke;
+}
+.songs>div>img{
+width:130px;
+height:130px;
+border-radius: 5px;
+}
+.songs>div>h2{
+font-size:15px;
+color: white;
+padding-top: 15px;
+font-family: 'Koh Santepheap', serif;
+}
+.songs>div>p{
+color:rgb(165, 162, 162);
+font-size: 13px;
+padding-top: 5px;
+font-family: 'Preahvihear', sans-serif;
+}
+header{
+font-size: 2rem;
+color: white;
+
+}
+header h1{
+    padding-top: 100px;
+}
+
+/* Part 2 Starts from here */
+
+.part2{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url(https://img.freepik.com/premium-photo/stormy-sky-background-thunderstorm-background-thunderstorm-wallpaper-rainy-sky-storm-clouds-ai-generative_703884-3684.jpg);
+}
+.main-div
+{
+    position: absolute;
+    width: 150vh;
+    height: 80vh;
+    margin-top: 100px ;
+    background-color: rgba(0, 0, 0, 0.551);
+    border-radius: 25px;
+}
+#location
+{
+    color: white;
+    font-size: xx-large;
+    margin-top: 70px;
+    margin-left: 230px;
+}
+#pic
+{
+    height: 210px;
+    width: 500px;
+    margin-left: 80px;
+}
+#pic>img
+{
+    align-items: center;
+    width: 460px;
+    height: 200px;
+}
+#w-cond>p
+{
+    color: white;
+    margin-top: 30px;
+    margin-left: 100px;
+    font-size: xx-large;
+}
+#temp
+{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 27px ;
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    height: 210px;
+    width: 200px;
+    margin-left: 80px;
+    position: absolute;
+}
+#pres
+{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 27px ;
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    height: 210px;
+    width: 200px;
+    margin-left: 376px;
+    position: absolute;
+}
+#long-let
+{
+    position: absolute;
+    color: white;
+    height: 210px;
+    width: 500px;
+    margin-left: 700px;
+    margin-top: -150px;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 30px ;
+    font-family: 'Mukta', sans-serif;
+}
+#wind
+{
+    position: absolute;
+    height: 210px;
+    width: 500px;
+    margin-left: 700px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px ;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
+form
+{
+    margin-left: 800px;
+    margin-top: -305px;
+    color: white;
+    position: absolute;
+}
+form>input
+{
+    width: 300px;
+    background-color: transparent;
+    margin-bottom: 0px;
+    border-top: none;
+    border-right: none ;
+    border-left: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+form>input::placeholder
+{
+    color: white;
+}
+form>button
+{
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid white;    
+    color: white;
+    border-radius: 15px ;
+    text-align: center;
+    justify-content: center;
+}
+form>button:hover
+{    
+    color: black;
+    background-color: aliceblue;
+}
+label
+{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}

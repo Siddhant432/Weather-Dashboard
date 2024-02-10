@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>WeatherDashboard.com</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <style>
+        
+    </style>
+    
+</head>
+<body>
+    <section class="part1" id="part1">
+        <div class="background">
+            <img src="https://rare-gallery.com/thumbs/505063-cloud-mountain.jpg" alt="">   
+        </div>
+        <div class="navigation-bar">
+            <nav class="navbar navbar-expand-sm justify-content-center fixed-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item noc" style="margin-left:150px ;">
+                        <a class="nav-link text-white text-decoration-none" href="#part1">Home</a>
+                    </li>
+                    <li class="nav-item noc">
+                        <a class="nav-link text-white text-decoration-none" href="#part2">Weather</a>
+                    </li>
+                    <li class="nav-item noc">
+                        <a class="nav-link text-white text-decoration-none" href="#part3">Top Stories</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">    
+                    <div class="content">
+                        <p class="webName">Weather Dashboard</p>
+                        <p class="quote">Provide You a World Wide Weather Forecast</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="part2" id="part2">
+        <div class="container">
+            <div class="main-div">
+                <div id="location">
+                </div>
+                <div id="pic"></div>
+                <div id="w-cond">
+                    <p>&nbsp;&nbsp;</p>
+                </div>
+                <div id="temp"></div>
+                <div id="pres"></div>
+                <form action="" id="form">
+                    <label for="search input">Search   Weather  Of  Any  Place</label><br><br>
+                    <input type="text" id="userinput"  placeholder=" Enter Place Name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit">search</button>
+                </form>
+                <div id="long-let"></div>
+                <div id="wind"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="part3" id="part3">
+        <header>
+            <h1 class="top-stories"><center>Top Stories</center> </h1>
+        </header>
+        <main>
+            <div class="songs">
+                <div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/02/SnowMapNE9Feb340p.jpg?w=64&h=64&crop=1">
+                    <h2>Winter Weather</h2>
+                    <p>Snowstorm eyes northeastern US just prior to Valentine's Day</p>
+                </div>
+                <div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/02/Screenshot-2024-02-07-at-11.10.24-AM.png?w=64&h=64&crop=1">
+                    <h2>HURRICANE</h2>
+                    <p>Should there be a Category 6 for extremely powerful hurricanes?</p>
+        
+                </div>
+                <div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/02/SERainSatToMon9Feb.jpg?w=64&h=64&crop=1">
+                    <h2>SEVERE WEATHER</h2>
+                    <p>Wet weekend in south to bring flood,severe weather threats</p>
+        
+                </div>
+                <div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2021/09/la-nina.jpg?w=64&h=64&crop=1">
+                    <h2>WEATHER FORECASTS</h2>
+                    <p>La Nina watch issued: What it means for the US</p>
+        
+                </div>
+                <div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/02/Iceland-volcano-erupts-for-third-time-in-two-months.jpg?w=64&h=64&crop=1">
+                    <h2>WEATHER NEWS</h2>
+                    <p>Iceland Volcano erupts for third time in two months</p>
+        
+                </div>
+                <div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/02/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHNjcnRidTcwMDB3MzU2aGZ2ZGw4MHJs-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsc2NyZTF1YzAwMWIyOXBiNXNjd2Jtdzk.jpg?w=116&h=116&crop=1">
+                    <h2>Marine Reports</h2>
+                    <p>5 Marines confirmed dead after their helicopter crash in California.</p>
+        
+                </div>
+                <div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/02/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHNieWl4aTQwMDBnM2I1dnl0OTd6emw3-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsc2J1OGE2ZzAwMGtid3FlMmUwajF4ZXI.jpg?w=116&h=116&crop=1">
+                    <h2>Moth Report</h2>
+                    <p>Moth are not drawn to light as previously thought.</p>
+        
+                </div>
+                <div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/02/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHM5aG03MngwMDE4M2I2aHRlMXcydTho-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2NsczloZzBrZjAwMHAyOXE4NWJldWdnYmo.jpg?w=116&h=116&crop=1">
+                    <h2>Disaster Report</h2>
+                    <p>storms in California hit homeowners facing already facing insurance.</p>
+        
+                </div>
+                <div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/02/AP24012580298082.jpg?w=116&h=116&crop=1">
+                    <h2>WEATHER REPORTS</h2>
+                    <p>Midwest snow map upside down as buds.</p>
+        
+                </div>
+                <div>
+                    <img src="https://cms.accuweather.com/wp-content/uploads/2024/02/cnn-L19jb21wb25lbnRzL2ltYWdlL2luc3RhbmNlcy9jbHNlOGcxN2cwMDBkM2I2aHdnbXgzc29n-L19jb21wb25lbnRzL2FydGljbGUvaW5zdGFuY2VzL2Nsc2UyMjdlYTAwZXFjOHFyZHFrazA5c24.jpg?w=116&h=116&crop=1">
+                    <h2>DIASTER REPORT</h2>
+                    <p>'Miraculous' rescue offers hope amid Phillipines landslide.</p>
+        
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
